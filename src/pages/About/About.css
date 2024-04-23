@@ -9,10 +9,10 @@
 .card-form {
     background-color: #F5EFE6;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 0px;
+    width: 80%;
+    margin: 20px;
     box-shadow: 0px 5px 5px #3C5A42;
-    width: 300px;
-    height: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* Adjust width as needed */
@@ -26,4 +26,8 @@
 .card-form label {
     display: block;
     margin-bottom: 5px;
+}
+
+.about-me p {
+    font-size: 1.5rem;
 }

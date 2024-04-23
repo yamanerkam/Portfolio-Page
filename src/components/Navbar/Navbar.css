@@ -1,0 +1,43 @@
+.navbar {
+    display: flex;
+    color: #E8DFCA !important;
+    position: fixed;
+    z-index: 100;
+    flex-flow: row;
+    justify-content: space-between;
+    background-color: #1A4D2E;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+
+}
+
+.navbar span {
+    position: relative;
+    left: 80px;
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    font-size: .9em;
+    margin-left: 20px;
+    margin-right: 100px;
+
+}
+
+.navbar li {
+    margin: 0 .5em;
+    transition: all 1s;
+
+}
+
+.navbar li:hover {
+    background-color: #E8DFCA;
+    color: #1A4D2E;
+
+}
+
+@media screen and (max-width: 768px) {}

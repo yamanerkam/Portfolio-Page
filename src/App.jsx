@@ -4,7 +4,7 @@ import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/home/Home'
 import About from './pages/About/About'
-
+import Projects from './pages/Projects/Projects'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -14,6 +14,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Projects />
 
 
     </>

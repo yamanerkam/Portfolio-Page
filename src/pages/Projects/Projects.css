@@ -1,0 +1,14 @@
+.projects {
+    background-color: #F5EFE6;
+    min-height: 100vh;
+    padding: 100px 20px;
+}
+
+.title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.title span {
+    color: #4F6F52;
+}

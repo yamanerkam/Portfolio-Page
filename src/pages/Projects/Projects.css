@@ -12,3 +12,13 @@
 .title span {
     color: #4F6F52;
 }
+
+.project-area {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.proj {
+    text-align: center;
+}

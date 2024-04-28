@@ -1,0 +1,32 @@
+.project-card {
+    background-color: #F5EFE6;
+    color: #4F6F52;
+    width: 80%;
+    padding: 20px;
+    border-radius: 1px;
+    margin: 50px 50px !important;
+    box-shadow: 0px 5px 5px #cedfd1;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+}
+
+.wrapper-btn {
+    alignItems: 'center'
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+    gap: 5px;
+}

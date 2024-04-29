@@ -1,17 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
 
 export default function Contact() {
+
+    const [user, setUser] = useState({ name: '', email: '', message: '' });
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setUser((prevUser) => ({
+            ...prevUser,
+            [name]: value,
+        }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(user)
+        setUser({ name: '', email: '', message: '' })
+    }
+
+
     return (
         <div className='contact'>
             <div className='main'>
                 <div className='parag'>paragraph</div>
                 <div className="form">
-                    <form >
+                    <form onSubmit={handleSubmit}>
                         <input
                             type="text"
                             name="name"
                             placeholder='Name'
+                            value={user.name}
+                            onChange={handleChange}
                             required
                         />
 
@@ -19,12 +38,16 @@ export default function Contact() {
                             type="email"
                             name="email"
                             placeholder='Email'
+                            value={user.email}
+                            onChange={handleChange}
                             required
                         />
 
                         <textarea
                             name="message"
                             placeholder='Message'
+                            value={user.message}
+                            onChange={handleChange}
                             required
                         />
 

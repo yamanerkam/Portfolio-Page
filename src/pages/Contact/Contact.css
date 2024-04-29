@@ -1,0 +1,19 @@
+.contact {
+    color: #E8DFCA;
+    font-size: 2rem;
+    padding: 200px 300px 0px 300px;
+    min-height: 100vh;
+    background-color: #4F6F52;
+
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

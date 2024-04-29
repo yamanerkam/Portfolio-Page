@@ -10,7 +10,6 @@ export default function Navbar() {
                 <li>HOME</li>
                 <li>ABOUT</li>
                 <li>PROJECTS</li>
-                <li>RESUME</li>
                 <li>CONTACT</li>
             </ul>
         </div>

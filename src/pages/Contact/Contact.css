@@ -8,8 +8,29 @@
 }
 
 .main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+}
+
+.parag {
+    white-space: nowrap;
+    margin-top: 100px;
+    margin-right: 50px;
+
+}
+
+.parag h1 {
+    padding: 0 80px;
+    font-size: 2em;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    margin-top: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+
 }
 
 
@@ -19,6 +40,12 @@
     color: #4F6F52;
 
 }
+
+
+
+
+
+
 
 input,
 textarea {
@@ -40,7 +67,6 @@ textarea {
 textarea {
     resize: none;
     font-size: 2rem;
-
     width: 80% !important;
     height: 100px;
 

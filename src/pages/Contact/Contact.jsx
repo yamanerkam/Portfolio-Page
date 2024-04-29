@@ -22,7 +22,10 @@ export default function Contact() {
     return (
         <div className='contact'>
             <div className='main'>
-                <div className='parag'>paragraph</div>
+                <div className='parag'>
+                    <h1>Get in Touch</h1>
+                    <h1>Contact me</h1 >
+                </div>
                 <div className="form">
                     <form onSubmit={handleSubmit}>
                         <input

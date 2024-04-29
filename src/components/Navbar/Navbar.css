@@ -16,13 +16,14 @@
     position: relative;
     left: 80px;
     font-size: 2em;
+    top: 10px;
     margin-right: 20px;
 }
 
 .navbar ul {
     display: flex;
     list-style: none;
-    font-size: .9em;
+    font-size: 1.2em;
     margin-left: 20px;
     margin-right: 100px;
 

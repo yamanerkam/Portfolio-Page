@@ -12,8 +12,57 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.form form {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+
+.submit {
+    font-size: 0.7em;
+    background-color: #E8DFCA;
+    color: #4F6F52;
+
+}
+
+input,
+textarea {
+    margin-top: 20px;
+    color: #E8DFCA;
+    font-size: 2rem;
+    height: 50px;
+    background-color: transparent;
+    border: 3px solid #E8DFCA;
+    border-radius: 20px;
+    width: 80%;
+    transition: all 1s;
+    padding: 12px 20px;
+
+}
+
+
+
+textarea {
+    resize: none;
+    font-size: 2rem;
+
+    width: 80% !important;
+    height: 100px;
+
+
+}
+
+
+
+
+input::placeholder,
+textarea::placeholder {
+    color: #E8DFCA;
+    padding-left: 0px;
+}
+
+textarea::placeholder {
+    padding-top: 6px;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    transform: scale(1.1);
 }

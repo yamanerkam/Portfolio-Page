@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Contact.css'
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export default function Contact() {
 
@@ -24,7 +25,7 @@ export default function Contact() {
             <div className='main'>
                 <div className='parag'>
                     <h1>Get in Touch</h1>
-                    <h1>Contact me</h1 >
+                    <h1 className='contact-me'>Contact me</h1 >
                 </div>
                 <div className="form">
                     <form onSubmit={handleSubmit}>
@@ -54,12 +55,39 @@ export default function Contact() {
                             required
                         />
 
-                        <button className='submit' type="submit">Submit</button>
+                        <button className='submit' type="submit">Send</button>
                     </form>
                 </div>
 
-
             </div>
+
+            <div className='bottom'>
+                <div className="socials">
+                    <li className='btn'>
+                        <a className='btn-icon' target="_blank" href="https://github.com/yamanerkam">
+                            <FaGithub />
+                        </a>
+
+
+                    </li>
+                    <li className='btn'><a className='btn-icon' target="_blank" href="https://www.instagram.com/erkamyaman35/ ">
+                        <FaInstagram />
+                    </a></li>
+                    <li className='btn'><a className='btn-icon' target="_blank" href="https://www.linkedin.com/in/erkamyaman35/
+ ">
+                        <FaLinkedin />
+                    </a></li>
+
+                    <li className='btn' >
+
+                        <a className='btn-icon' target="_blank" href="https://www.linkedin.com/in/erkamyaman35/ ">
+                            <FaTwitter />
+                        </a></li>
+
+                </div>
+            </div>
+
+
         </div >
     )
 }

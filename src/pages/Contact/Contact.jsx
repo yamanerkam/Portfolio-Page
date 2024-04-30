@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
+import emailjs from '@emailjs/browser';
+
 import './Contact.css'
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export default function Contact() {
-
+    const form = useRef();
     const [user, setUser] = useState({ name: '', email: '', message: '' });
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -16,7 +18,23 @@ export default function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log(user)
+
+
+        emailjs
+            .sendForm('service_yvd46w4', 'template_2pk8wao', form.current, {
+                publicKey: '40I0FwzM30_m_vkho',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+
         setUser({ name: '', email: '', message: '' })
+
     }
 
 
@@ -28,7 +46,7 @@ export default function Contact() {
                     <h1 className='contact-me'>Contact me</h1 >
                 </div>
                 <div className="form">
-                    <form onSubmit={handleSubmit}>
+                    <form ref={form} onSubmit={handleSubmit}>
                         <input
                             type="text"
                             name="name"

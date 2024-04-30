@@ -22,7 +22,7 @@ export default function Home() {
                 style={{ fontSize: '3em', display: 'inline-block' }}
             />
 
-            <button className='btn'>View My Portfolio</button>
+            <button className='btn home-btn'>View My Portfolio</button>
 
         </div>
     )

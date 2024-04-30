@@ -8,7 +8,7 @@ import imgSrc from './img.jpeg';
 
 export default function Projects() {
     return (
-        <div className='projects'>
+        <div id='projects' className='projects'>
             <h1 className='title'>My Recent <span>Projects</span></h1>
             <div className='project-area'>
 

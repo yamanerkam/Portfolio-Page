@@ -9,7 +9,7 @@ import CSSLogo from './icons/css.png'
 import NodeLogo from './icons/node.svg'
 export default function About() {
     return (
-        <div className='about'>
+        <div id='about' className='about'>
 
             <div className="card-form">
 

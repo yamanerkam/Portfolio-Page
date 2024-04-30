@@ -7,10 +7,11 @@ export default function Navbar() {
         <div className='navbar'>
             <span>Kam</span>
             <ul>
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>PROJECTS</li>
-                <li>CONTACT</li>
+                <li><a className='link-nav' href="#home" class="active">Home</a></li>
+                <li><a className='link-nav' href="#about">About</a></li>
+                <li><a className='link-nav' href="#projects">Projects</a></li>
+                <li><a className='link-nav' href="#contact">Contact</a>
+                </li>
             </ul>
         </div>
     )

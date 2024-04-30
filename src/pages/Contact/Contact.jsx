@@ -39,7 +39,7 @@ export default function Contact() {
 
 
     return (
-        <div className='contact'>
+        <div id='contact' className='contact'>
             <div className='main'>
                 <div className='parag'>
                     <h1>Get in Touch</h1>

@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 import './Home.css'
 export default function Home() {
     return (
-        <div className='home'>
+        <div id='home' className='home'>
 
             <h1>Hello, I am Kam <span className='wave'>👋</span></h1>
             <TypeAnimation

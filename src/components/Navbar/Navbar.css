@@ -5,7 +5,7 @@
     z-index: 100;
     flex-flow: row;
     justify-content: space-between;
-    background-color: #1A4D2E;
+    background-color: #709968;
     color: white;
     width: 100%;
     padding: 20px 0;
@@ -38,6 +38,12 @@
 .navbar li:hover {
     background-color: #E8DFCA;
     color: #1A4D2E;
+
+}
+
+.link-nav {
+    color: white;
+    text-decoration: none;
 
 }
 

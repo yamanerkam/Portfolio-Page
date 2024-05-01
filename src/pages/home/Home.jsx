@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import './Home.css'
 export default function Home() {
+
+    const scrollToProjects = () => {
+        const projectsSection = document.querySelector('#projects');
+        projectsSection.scrollIntoView({ behavior: 'smooth' });
+    };
     return (
         <div id='home' className='home'>
 
@@ -22,7 +27,7 @@ export default function Home() {
                 style={{ fontSize: '3em', display: 'inline-block' }}
             />
 
-            <button className='btn home-btn'>View My Portfolio</button>
+            <button onClick={scrollToProjects} className='btn home-btn'>View My Portfolio</button>
 
         </div>
     )

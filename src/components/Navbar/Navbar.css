@@ -50,11 +50,12 @@
 .link-nav {
     color: #E8DFCA;
     text-decoration: none;
+    transition: all 1s;
 }
 
 .link-nav:hover {
-    transition: all 1s;
-    color: #1A4D2E;
+    color: #709968;
+
 
 
 }

@@ -1,7 +1,7 @@
 .project-card {
     background-color: #F5EFE6;
     color: #4F6F52;
-    width: 75%;
+    width: 70%;
     padding: 20px;
     border-radius: 1px;
     margin: 50px 50px !important;
@@ -39,4 +39,10 @@
     align-items: center;
     font-size: 1.25em;
     gap: 5px;
+}
+
+.img {
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 75%;
 }
